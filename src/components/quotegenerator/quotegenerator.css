@@ -1,0 +1,30 @@
+@import url('http://fonts.cdnfonts.com/css/monofonto');
+ 
+
+ .quoteContainer {
+  position: relative;
+  bottom: 0px;
+   margin: auto 0;
+    border-radius: 10px;
+    font-family: 'monofonto', sans-serif;
+      width: auto;
+      max-width: 900px;
+      padding: 20px 30px;
+      box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+      
+    
+    }
+    .quote-text{
+      font-size: 1.75rem;
+    }
+    .long-quote {
+      font-size: 1rem;
+    }
+   
+    .quote-author{
+      margin-top: 15px;
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+    }
