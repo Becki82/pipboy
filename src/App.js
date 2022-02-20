@@ -7,7 +7,6 @@ import styled, { ThemeProvider } from 'styled-components';
 import { Toggle } from './components/toggle/Toggle';
 import {useDarkMode} from './components/styles/useDarkMode';
 import { Globalstyles, lightTheme, darkTheme } from './components/styles/globalstyles';
-import { Component } from 'react';
 
 const Container = styled.div`
         margin: 0;
