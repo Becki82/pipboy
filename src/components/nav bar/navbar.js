@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -13,14 +14,14 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
     if (isSignedIn) {
       return (
         <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
-          <button onClick={() => onRouteChange('signout')} className='f3 link dim black underline pa3 pointer'>Sign Out</button>
+          <Link to="/signout" className='f3 link dim black underline pa3 pointer'>Sign Out</Link>
         </nav>
       );
     } else {
       return (
         <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
-          <button onClick={() => onRouteChange('signin')} className='f3 link dim black underline pa3 pointer'>Sign In</button>
-          <button onClick={() => onRouteChange('register')} className='f3 link dim black underline pa3 pointer'>Register</button>
+          <Link to="/signin" className='f3 link dim black underline pa3 pointer'>Sign In</Link>
+          <Link to="/register" className='f3 link dim black underline pa3 pointer'>Register</Link>
         </nav>
       )
     }
