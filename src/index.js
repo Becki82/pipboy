@@ -8,6 +8,7 @@ import {
 import './index.css';
 import App from './App';
 import Register from './components/register/Register';
+import Signin from './components/signin/signIn';
 
 
 
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="register" element={<Register />} />
+      <Route path="signin" element={<Signin />}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
