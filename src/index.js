@@ -16,8 +16,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="register" element={<Register />} />
       <Route path="signin" element={<Signin />}/>
+      <Route path="register" element={<Register />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

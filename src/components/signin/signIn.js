@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 
 
 function Signin ({loadUser, onRouteChange}) {
@@ -34,7 +35,6 @@ function Signin ({loadUser, onRouteChange}) {
      
 
 return (
-    //const { onRouteChange } = this.props; - this is in the original code within the render section and before return. not too sure what to do with it?
       <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
         <main className="pa4 black-80">
           <div className="measure">
@@ -70,7 +70,7 @@ return (
               />
             </div>
             <div className="lh-copy mt3">
-              <p  onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</p>
+              <Link to="/register" onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</Link>
             </div>
           </div>
         </main>
