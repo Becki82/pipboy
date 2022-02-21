@@ -70,7 +70,7 @@ return (
               />
             </div>
             <div className="lh-copy mt3">
-              <Link to="/register" onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</Link>
+              <Link to="/register" className="f6 link dim black db pointer">Register</Link>
             </div>
           </div>
         </main>

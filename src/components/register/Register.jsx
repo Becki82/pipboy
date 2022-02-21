@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 
 function Register({loadUser, onRouteChange}) {
     const [email, setEmail] = useState('')
@@ -82,6 +83,9 @@ function Register({loadUser, onRouteChange}) {
                   value="Register"
                 />
               </div>
+              <div className="lh-copy mt3">
+              <p>Already have an account ?</p> <Link to="/signin" className="f6 link dim black db pointer">Sign In</Link>
+            </div>
             </div>
           </main>
         </article>
