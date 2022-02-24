@@ -3,6 +3,8 @@ import './tabs.css';
 import FirstTab from "./firsttab";
 import SecondTab from "./secondtab";
 
+ // update all styling
+
  
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
