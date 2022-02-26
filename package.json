@@ -13,6 +13,8 @@
     "react-player": "^2.9.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-simple-tabs-component": "^2.1.1",
+    "react-spring": "^9.4.3",
     "reactjs-media": "^2.2.0",
     "resizable-pip": "^0.1.1",
     "styled-components": "^5.3.3",
@@ -43,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
   }
 }
