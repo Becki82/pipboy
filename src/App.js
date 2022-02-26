@@ -1,5 +1,4 @@
 import './App.css';
-import Navigation from './components/nav bar/navbar';
 import  DateTime from './components/datetime/datetime';
 import styled, { ThemeProvider } from 'styled-components';
 import { Toggle } from './components/toggle/Toggle';
