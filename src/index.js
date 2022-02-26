@@ -7,17 +7,15 @@ import {
 } from "react-router-dom";
 import './index.css';
 import App from './App';
-import Register from './components/register/Register';
-import Signin from './components/signin/signIn';
+import Home from './components/mainpage';
 
 
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="signin" element={<Signin />}/>
-      <Route path="register" element={<Register />} />
+    <Route path="/" element={<App />} />
+      <Route path="/home" element={<Home/>}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
