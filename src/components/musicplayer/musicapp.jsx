@@ -31,8 +31,9 @@ const stations = [{
     return (
       <>
       <div className='wrapper'>
+        <div className='playerContainer'>
         <ReactPlayer className="player"
-          width='20%'
+          width='80%'
           height='100%'
           url={stationUrl}
           playing={playing}
@@ -42,6 +43,7 @@ const stations = [{
           />
           <div className='stations'>
           {stations.map(({url, label}, index)=>  <button className='btn' key={index} onClick={() => setStationUrl(url)}>{label}</button>)}
+          </div>
           </div>
           </div>
       </>

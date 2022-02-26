@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import DateTime from '../datetime/datetime';
 
 
 
@@ -15,6 +16,7 @@ const Navigation = () => {
   return (
     <>
     <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
+    <DateTime/>
     <button className="btn" onClick={handleClick}>Log Out</button>
     </nav>
     </>

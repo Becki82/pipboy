@@ -3,3 +3,17 @@
   font-size: 2rem;
   text-align: center;
 }
+label {
+  vertical-align: middle;
+}
+
+.inputbox {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.icon {
+  padding: 5px;
+  vertical-align: middle;
+  position: absolute;
+}

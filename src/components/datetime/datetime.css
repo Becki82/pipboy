@@ -1,4 +1,6 @@
 p {
-    font-family: 'monofonto', sans-serif;
-    color: var(--color);
+  display: inline-block;
+  margin: 5px;
+  padding: 2px;
+  font-family: "monofonto", sans-serif;
 }

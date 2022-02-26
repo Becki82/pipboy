@@ -3,7 +3,7 @@ import './tabs.css';
 import FirstTab from "./firsttab";
 import SecondTab from "./secondtab";
 
- // update all styling
+
 
  
 const Tabs = () => {
@@ -30,7 +30,7 @@ const Tabs = () => {
           className={activeTab === "tab2" ? "active" : ""}
           onClick={handleTab2}
         >
-          Sign Out
+          Sign Up
         </li>
       </ul>
  

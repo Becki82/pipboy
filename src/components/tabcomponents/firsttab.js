@@ -1,6 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './tabs12.css';
+import {FiMail} from 'react-icons/fi';
+import {RiLockPasswordFill} from 'react-icons/ri';
+
 
 
 const FirstTab = () => {
@@ -14,26 +17,31 @@ const FirstTab = () => {
         <>
         <div className="FirstTab">
               <div>
-              <legend >Sign In</legend>
-              <div >
-                <label htmlFor="email-address">Email</label>
-                <input
+              <div className="inputbox">
+                <label >Email:</label>
+                <FiMail className="icon"/>
+                <input className="input1"
                   type="email"
                   name="email-address"
-                  id="email-address"     
-                />
+                  id="email-address"  
+                  placeholder=" Email Address"  
+                  required
+                />        
               </div>
-              <div >
-                <label >Password</label>
-                <input
+              <div className="inputbox">
+                <label >Password:</label>
+                <RiLockPasswordFill className="icon"/>
+                <input  className="input1"
                   type="password"
                   name="password"
                   id="password"
+                  placeholder="********"
+                  required
                  
                 />
               </div>
-            <div className="">
-              <input 
+            <div className="button">
+              <input className="btn"
                 onClick={handleClick}
                 type="submit"
                 value="Sign in"

@@ -2,7 +2,6 @@ import '../App.css'
 import RandomQuote from './quotegenerator/quotegenerator';
 import SelectMusic from './musicplayer/musicapp';
 import Navigation from './nav bar/navbar';
-import  DateTime from './datetime/datetime';
 import styled, { ThemeProvider } from 'styled-components';
 import { Toggle } from './toggle/Toggle';
 import {useDarkMode} from './styles/useDarkMode';
@@ -36,7 +35,6 @@ const Container = styled.div`
             <Toggle theme={theme} toggleTheme={toggleTheme} />
             <Navigation />
              <h1>Greetings Vault Dweller.</h1>
-            <DateTime />
             <RandomQuote />
             <SelectMusic />
           </Container>
