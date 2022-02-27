@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import pipboy from '../../Assets/Pipbackround.png';
 import vaultBoy from '../../Assets/Vault_Boy.png';
 
-//look at Oveerseer fonts use
+//look at Oveerseer fonts and use in styled components
 
 export const Globalstyles = createGlobalStyle `
 
