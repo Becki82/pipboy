@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import pipboy from '../../assets/Pipbackround.png';
-import vaultBoy from '../../assets/Vault_Boy.png';
+import pipboy from '../../Assets/Pipbackround.png';
+import vaultBoy from '../../Assets/Vault_Boy.png';
 
-
+//look at Oveerseer fonts use
 
 export const Globalstyles = createGlobalStyle `
 
@@ -14,6 +14,13 @@ export const Globalstyles = createGlobalStyle `
         text-shadow: ${({theme}) => theme.textShadow};
         transition: all .5s linear;
         height: 100vh;
+        text-align: center;
+      
+    }
+
+    h1, p {
+      margin: 0;
+    }
 
     #root {
         background-image: url(${({theme}) => theme.backgroundImage});
@@ -21,61 +28,12 @@ export const Globalstyles = createGlobalStyle `
         background-position: ${({theme}) => theme.backgroundPosition};
         background-size: ${({theme}) => theme.backgroundSize};
         height: 100%;
-        
+        font-family: 'Share Tech Mono', monospace;
+                                                
+                
     }
-    .Tabs {
-        width: 30%;
-        height: auto;
-        min-height: 50%;
-        background: ${({theme}) => theme.tabBackground};
-        margin: 3.5rem auto 1.5rem;
-        padding: 2rem 1rem;
-        color: ${({theme}) => theme.formColor};
-        border-radius: 2rem;
-        border: 2px solid #0d0d0d;
-        @media (max-width: 769px) {
-          padding: 2rem 0;
-        }
-      }
       
-      /* Tab Navigation */
-      ul.nav {
-        width: 60%;
-        margin: 0 auto 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 1px solid #003300;
-        border-radius: 2rem;
-        padding-left: 0px;
-        @media (max-width: 768px) {
-          width: 90%;
-        }
-      }
-      ul.nav li {
-        width: 50%;
-        padding: 1rem;
-        list-style: none;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.7s;
-        border-bottom-left-radius: 2rem;
-        border-top-left-radius: 2rem;
-      }
-      ul.nav li:nth-child(2) {
-        border-radius: 0;
-        border-bottom-right-radius: 2rem;
-        border-top-right-radius: 2rem;
-      }
-      ul.nav li:hover {
-        background: ${({theme}) => theme.hoverColor};
-      }
-      ul.nav li.active {
-        background: ${({theme}) => theme.activeTabBackground};
-      }
-      
-       
-    .input1 {
+    .inputStyle {
         text-indent: 20px;
         background-color: ${({theme}) => theme.inputBackground};
         border-radius: 5px;
@@ -85,7 +43,7 @@ export const Globalstyles = createGlobalStyle `
         color: ${({theme}) => theme.formColor};
       }
       
-      .input1:focus {
+      .inputStyle:focus {
         background-color: ${({theme}) => theme.formInputBackground};
       }
 
@@ -96,14 +54,6 @@ export const Globalstyles = createGlobalStyle `
         color: ${({theme}) => theme.iconColor};
       }
 
-    btn-primary {
-        background: ${({theme}) => theme.primary};
-        color: ${({theme}) => theme.text};
-        transition: all .5s linear;
-        padding: 0.5rem 1.5rem;
-        border-radius: 1rem;
-        
-    }
     .btn{
       margin: 2px;
         background-color: ${({theme}) => theme.btnBackground};
@@ -128,19 +78,6 @@ export const Globalstyles = createGlobalStyle `
         box-shadow: rgba(71, 226, 130, 0.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
         transform: scale(1.05) rotate(-1deg);
       }
-
-  .playerContainer {
-    background-color: ${({theme})=> theme.playerBackground};
-      display: flex;
-      flex-direction: column-reverse;
-      border: 2px solid black;
-      border-style: inset;
-      border-radius: 40px;
-      padding: 2px;
-      justify-content: center;
-      margin: 2px;
-    }
-  }
 
 `
 

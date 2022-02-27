@@ -1,5 +1,13 @@
 import  React, { useState , useEffect } from 'react'
-import './datetime.css'
+import styled from 'styled-components';
+
+const P = styled.div `
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+    font-family: "monofonto", sans-serif;
+  
+  `;
 
 export const DateTime = () => {
 
@@ -15,8 +23,8 @@ export const DateTime = () => {
 
     return(
         <div>
-            <p> {date.toLocaleDateString()}</p>
-            <p> {date.toLocaleTimeString()}</p>
+            <P> {date.toLocaleDateString()}</P>
+            <P> {date.toLocaleTimeString()}</P>
         </div>
     )
 }

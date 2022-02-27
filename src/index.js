@@ -5,9 +5,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import './index.css';
 import App from './App';
-import Home from './components/mainpage';
+import Home from './Components/MainPage';
 
 
 

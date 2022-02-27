@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import DateTime from '../datetime/datetime';
+import DateTime from '../DateTime/DateTime';
 
 
 //Amend to just be sign in / sign out with functionality 

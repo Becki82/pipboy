@@ -1,8 +1,14 @@
 import React from "react";
+import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import './tabs12.css';
 import {FiMail} from 'react-icons/fi';
 import {RiLockPasswordFill} from 'react-icons/ri';
+
+const InputBox= styled.div `
+  width: 100%;
+  margin-bottom: 5px;
+
+`;
 
 
 
@@ -17,21 +23,21 @@ const FirstTab = () => {
         <>
         <div className="FirstTab">
               <div>
-              <div className="inputbox">
-                <label >Email:</label>
+              <InputBox>
+                <label style={{verticalAlign: 'middle'}} for='email' >Email:</label>
                 <FiMail className="icon"/>
-                <input className="input1"
+                <input className="inputStyle"
                   type="email"
-                  name="email-address"
-                  id="email-address"  
+                  name="email"
+                  id="email"  
                   placeholder=" Email Address"  
                   required
                 />        
-              </div>
-              <div className="inputbox">
-                <label >Password:</label>
+              </InputBox>
+              <InputBox>
+                <label style={{verticalAlign: 'middle'}} for='password'>Password:</label>
                 <RiLockPasswordFill className="icon"/>
-                <input  className="input1"
+                <input  className="inputStyle"
                   type="password"
                   name="password"
                   id="password"
@@ -39,7 +45,7 @@ const FirstTab = () => {
                   required
                  
                 />
-              </div>
+              </InputBox>
             <div className="button">
               <input className="btn"
                 onClick={handleClick}

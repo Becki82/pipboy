@@ -1,11 +1,10 @@
-import '../App.css'
-import RandomQuote from './quotegenerator/quotegenerator';
-import SelectMusic from './musicplayer/musicapp';
-import Navigation from './nav bar/navbar';
+import RandomQuote from './QuoteGenerator/QuoteGenerator';
+import SelectMusic from './MusicPlayer/MusicApp';
+import Navigation from './NavBar/NavBar';
 import styled, { ThemeProvider } from 'styled-components';
-import { Toggle } from './toggle/Toggle';
-import {useDarkMode} from './styles/useDarkMode';
-import { Globalstyles, lightTheme, darkTheme } from './styles/globalstyles';
+import { Toggle } from './Toggle/Toggle';
+import {useDarkMode} from './Styles/UseDarkMode';
+import { Globalstyles, lightTheme, darkTheme } from './Styles/GlobalStyles';
 
 
 
@@ -16,12 +15,8 @@ const Container = styled.div`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        height: 100vh;
-        widht: 100vw;
-        
-        
+        height: 100vh;  
 `;
-
 
 
   function Home () {
@@ -34,7 +29,7 @@ const Container = styled.div`
  return (
       <div className='container'>
         <ThemeProvider theme={themeMode}>
-          <Container className='cover'>
+          <Container>
             <Globalstyles />
             <Toggle theme={theme} toggleTheme={toggleTheme} />
             <Navigation />
