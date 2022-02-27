@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react"
 import './quotegenerator.css';
+import {FaQuoteLeft} from 'react-icons/fa';
 
 
 
@@ -37,7 +38,7 @@ function RandomQuote() {
         <div className="quoteContainer">
         <h2 style={{textDecoration:'underline', margin:'0',padding:'2px'}}> Today's thought of the day is;</h2>
             <div className="quote">
-                <p className="quote-text">{quote}</p>
+                <p className="quote-text"><FaQuoteLeft style={{padding:'2px'}}/>{quote}</p>
                 <br></br>
                 <p className="quote-author">-{author}</p>
             </div>

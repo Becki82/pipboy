@@ -8,16 +8,19 @@ import {useDarkMode} from './styles/useDarkMode';
 import { Globalstyles, lightTheme, darkTheme } from './styles/globalstyles';
 
 
+
 const Container = styled.div`
         margin: 0;
+        padding:0;
         font-family: 'Monofonto', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
+        height: 100vh;
+        widht: 100vw;
         
         
 `;
-
 
 
 
@@ -27,6 +30,7 @@ const Container = styled.div`
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
  //make to do list and p.i.p element
+ 
  return (
       <div className='container'>
         <ThemeProvider theme={themeMode}>

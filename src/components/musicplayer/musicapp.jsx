@@ -37,7 +37,7 @@ const stations = [{
           height='100%'
           url={stationUrl}
           playing={playing}
-          controls
+          controls= 'true'
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
           />
