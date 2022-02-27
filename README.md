@@ -2,7 +2,9 @@ PipBoy App
 
 RadBoy
 
-Dashboard incorporating a music player and quote generator in the style of the Fallout game series using React
+Dashboard incorporating a music player and quote generator in the style of the Fallout game series using React and styled components
+
+Styling still to be completed to make it fully responsive
 
 This is a work in progress with items still to include;
 
