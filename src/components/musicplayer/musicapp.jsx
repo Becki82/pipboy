@@ -1,6 +1,29 @@
-import './musicapp.css';
+import styled from 'styled-components';
 import React from "react";
 import ReactPlayer from 'react-player/youtube';
+
+
+const PlayerContainer = styled.div `
+    background-color: ${({theme})=> theme.playerBackground};
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid black;
+    border-style: inset;
+    border-radius: 40px;
+    padding: 2px;
+    justify-content: center;
+    margin: 2px;
+  `;
+
+  const StationsStyles = styled.div `
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: 2px;
+    padding: 2px;
+    width: 75%;
+  
+  `;
 
 
 const stations = [{
@@ -30,19 +53,21 @@ const stations = [{
     
     return (
       <>
-      <div className='wrapper'>
-        <ReactPlayer className="player"
-          width='20%'
+      <div style={{display:'flex', flexDirection: 'row-reverse', paddingRight:'5px'}}>
+        <PlayerContainer>
+        <ReactPlayer style={{display:'flex', alignSelf: 'center', padding: '5px'}}
+          width='80%'
           height='100%'
           url={stationUrl}
           playing={playing}
-          controls
+          controls= 'true'
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
           />
-          <div className='stations'>
+          <StationsStyles>
           {stations.map(({url, label}, index)=>  <button className='btn' key={index} onClick={() => setStationUrl(url)}>{label}</button>)}
-          </div>
+          </StationsStyles>
+          </PlayerContainer>
           </div>
       </>
     )

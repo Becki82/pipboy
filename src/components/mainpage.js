@@ -1,25 +1,22 @@
-import '../App.css'
-import RandomQuote from './quotegenerator/quotegenerator';
-import SelectMusic from './musicplayer/musicapp';
-import Navigation from './nav bar/navbar';
-import  DateTime from './datetime/datetime';
+import RandomQuote from './QuoteGenerator/QuoteGenerator';
+import SelectMusic from './MusicPlayer/MusicApp';
+import Navigation from './NavBar/NavBar';
 import styled, { ThemeProvider } from 'styled-components';
-import { Toggle } from './toggle/Toggle';
-import {useDarkMode} from './styles/useDarkMode';
-import { Globalstyles, lightTheme, darkTheme } from './styles/globalstyles';
+import { Toggle } from './Toggle/Toggle';
+import {useDarkMode} from './Styles/UseDarkMode';
+import { Globalstyles, lightTheme, darkTheme } from './Styles/GlobalStyles';
+
 
 
 const Container = styled.div`
         margin: 0;
+        padding:0;
         font-family: 'Monofonto', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        
-        
+        height: 100vh;  
 `;
-
-
 
 
   function Home () {
@@ -28,15 +25,15 @@ const Container = styled.div`
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
  //make to do list and p.i.p element
+ 
  return (
       <div className='container'>
         <ThemeProvider theme={themeMode}>
-          <Container className='cover'>
+          <Container>
             <Globalstyles />
             <Toggle theme={theme} toggleTheme={toggleTheme} />
             <Navigation />
              <h1>Greetings Vault Dweller.</h1>
-            <DateTime />
             <RandomQuote />
             <SelectMusic />
           </Container>
