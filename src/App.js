@@ -1,27 +1,18 @@
-import './App.css';
-import  DateTime from './components/datetime/datetime';
+import  DateTime from './Components/DateTime/DateTime';
 import styled, { ThemeProvider } from 'styled-components';
-import { Toggle } from './components/toggle/Toggle';
-import {useDarkMode} from './components/styles/useDarkMode';
-import { Globalstyles, lightTheme, darkTheme } from './components/styles/globalstyles';
-import Tabs from './components/tabcomponents/tab';
-
-
-
+import { Toggle } from './Components/Toggle/Toggle';
+import {useDarkMode} from './Components/Styles/UseDarkMode';
+import { Globalstyles, lightTheme, darkTheme } from './Components/Styles/GlobalStyles';
+import Tabs from './Components/TabComponents/Tab';
 
 
 
 const Container = styled.div`
         margin: 0;
-        font-family: 'Monofonto', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        
-        
 `;
-
-
 
 
   function App () {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
-import sun from '../../assets/sun.png';
-import moon from '../../assets/greenmoon.png';
+import sun from '../../Assets/sun.png';
+import moon from '../../Assets/greenmoon.png';
 
 
 
