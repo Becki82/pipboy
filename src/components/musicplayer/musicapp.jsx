@@ -13,6 +13,7 @@ const PlayerContainer = styled.div `
     padding: 2px;
     justify-content: center;
     margin: 2px;
+
   `;
 
   const StationsStyles = styled.div `

@@ -15,12 +15,19 @@ export const Globalstyles = createGlobalStyle `
         transition: all .5s linear;
         height: 100vh;
         text-align: center;
+        font-size: 0.7rem;
+
+        @media (min-width: 600px){
+          font-size: 1.2rem;
+        }
       
     }
 
     h1, p {
       margin: 0;
     }
+
+    
 
     #root {
         background-image: url(${({theme}) => theme.backgroundImage});

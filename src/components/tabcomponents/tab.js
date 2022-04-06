@@ -4,18 +4,21 @@ import FirstTab from "./FirstTab";
 import SecondTab from "./SecondTab";
 
 const Tabstyle = styled.div `
-      width: 30%;
+      width: auto;
       height: auto;
       min-height: 50%;
       background: ${({theme}) => theme.tabBackground};
       margin: 3.5rem auto 1.5rem;
-      padding: 2rem 1rem;
+      padding: 2rem 0rem;
       color: ${({theme}) => theme.formColor};
       border-radius: 2rem;
       border: 2px solid #0d0d0d;
-      @media (max-width: 769px) {
-        padding: 2rem 0;
+      
+      @media (min-width: 600px) {
+        width: 50%;
+        padding: 2rem 1rem;
       }
+      
       
       ul.nav {
         width: 60%;
