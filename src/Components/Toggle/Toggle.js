@@ -13,10 +13,14 @@ position: fixed;
 top: 0;
 left: 0;
 padding: 10px;
-height: 5%;
-width: auto;
+height: 4%;
+width: 5%;
 transition: all .5s linear;
 cursor: pointer;
+@media (min-width: 600px) {
+    height: 5%;
+    width: auto;
+}
 `
 
 

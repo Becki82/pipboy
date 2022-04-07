@@ -9,8 +9,8 @@ const QuoteWrapper = styled.div `
   
   .quoteContainer {
     --angle: 0deg;
-    width: 40%;
-    max-height: 25vh;
+    width: auto;
+    max-height: 20vh;
     overflow-y: scroll;
     border: 0.2rem solid;
     border-image: linear-gradient(var(--angle), #00e600, #006600, #0d0d0d) 1;
@@ -19,6 +19,11 @@ const QuoteWrapper = styled.div `
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
   }
   
+  @media (min-width: 600px){
+    width: 40%
+    max-height: 25vh;
+  }
+
   @keyframes rotate {
     to {
       --angle: 360deg;
